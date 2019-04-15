@@ -1,0 +1,18 @@
+2019年4月15日
+
+# 实验于将APS 追溯系统中的全部数据通过整理导出
+
+# SQL :
+导出所有测试表，使用 FULL JOIN 耗时 300+ 秒，INNER JOIN 耗时 3 秒。
+
+
+两表直接笛卡尔积的结果数量是两表的数据量相乘
+带where条件id相等的笛卡尔积和inner join结果相同，但是inner join效率快一点
+left join：TEST_A表的ID为空时拼接TEST_B表的内容为空，right join则相反
+full join：等于left join和right join的并集
+--------------------- 
+作者：literary--giant 
+来源：CSDN 
+原文：https://blog.csdn.net/u014682191/article/details/53009871 
+
+
